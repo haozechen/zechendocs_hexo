@@ -14,7 +14,7 @@
 
 
 
-<title>Hello World | Hexo</title>
+<title>电子学 | Hexo</title>
 
 
 
@@ -112,7 +112,7 @@
         <div class="post-title">
             
             
-                Hello World
+                电子学
             
             
         </div>
@@ -127,19 +127,18 @@
     </div>
 </div>
     <div class="post-content">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <h1 id="电子学"><a href="#电子学" class="headerlink" title="电子学"></a>电子学</h1><h2 id="PN结"><a href="#PN结" class="headerlink" title="PN结"></a>PN结</h2><p><img src="/assets/image-20240729150617285.png" alt="image-20240729150617285"></p>
+<p>p型半导体载流子为空穴，n型半导体载流子为电子</p>
+<p>p型半导体和n型半导体接触，接触面由于扩散作用，电子自发的向左移动填充空穴。</p>
+<p>因此p型半导体到负电，n型半导体带正电，产生一个内建电场，与扩散作用的力相平衡。</p>
+<p>电子通过扩散作用填充空穴，造成p型半导体和n型半导体的载流子都很少，传导电子能力下降。</p>
+<p>正向偏压（正极接p型半导体，负极接n型半导体）：p型半导体中耗尽层与空穴复合的电子电极方向脱离，n型半导体中电子向耗尽层移动，此时耗尽层变窄，传导电子能力增强。在界面处，外加电场方向与扩散作用的方向一致，电子由n到p传导，且电子在n型半导体为多子，受到外加电场的力和扩散作用的力，同时阻碍传导的内建电场变弱，有利于传导，导通。<br>总结：因为外加电场作用导致耗尽层的变窄，电子从n型半导体到p型半导体是多子（受外加电场和扩散作用），传导过去之后加剧扩散作用</p>
+<p>反向偏压：n型半导体中电子向电极偏聚，导致耗尽层增大，p型半导体中空穴受电极吸引也向左侧偏聚，电子与空穴复合增多，耗尽层变宽，传导能力减弱。在界面处，外加电场方向与内建电场的方向一致，与扩散作用相反，传导的为电子，从p型半导体到n型半导体，由于电子在p型半导体中为少子，因此传导的数量非常少，几乎可认为电流为0，截止。<br>总结：外加电场导致耗尽层变窄，</p>
+<h2 id="MOSFET"><a href="#MOSFET" class="headerlink" title="MOSFET"></a>MOSFET</h2><img src="./assets/image-20240729152525280.png" alt="image-20240729152525280" style="zoom:30%;" />
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<img src="./assets/image-20240729152538485.png" alt="image-20240729152538485" style="zoom:30%;" />
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>n型的mosfet：源极Source和漏极Drain下面是n型半导体，基板为p型半导体（掺杂使之带有部分电子），栅极未通电时，两个PN结相当于两个对置二极管，截止。栅极通电时</p>
 
 </div> 
 
@@ -153,7 +152,7 @@
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/2024/08/24/%E8%AE%A1%E7%AE%97%E5%8C%96%E5%AD%A6/">Prev</a>
+                    <a href="/2024/08/24/%E6%96%87%E7%8C%AE%E7%AC%94%E8%AE%B0/">Prev</a>
                 </div>
             
         </div>
@@ -161,7 +160,7 @@
             
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="/1984/01/24/%E5%8C%96%E5%AD%A6%E6%80%A7%E8%B4%A8/">Next</a>  
+                  <a href="/2024/08/24/%E8%AE%A1%E7%AE%97%E5%8C%96%E5%AD%A6/">Next</a>  
                 </div>  
             
         </div>

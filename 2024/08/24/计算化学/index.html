@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Doe">
+
+
+
+
+
+
+
+<title>计算化学 | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            Frame.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                计算化学
+            
+            
+        </div>
+        <span class="post-date">
+            Aug 24, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h1 id="高斯Gaussian"><a href="#高斯Gaussian" class="headerlink" title="高斯Gaussian"></a>高斯Gaussian</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv20906207/?from=search&spm_id_from=333.337.0.0">Gaussian（高斯）入门笔记 可应对一般的量化计算</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv7904505/?from=search&spm_id_from=333.337.0.0">【计算教程】Gaussian输入输出文件解读</a></p>
+<p>基组的选择</p>
+<p>单点能的计算</p>
+<p>原子种类数目不同的分子不能比较单点能</p>
+<h1 id="VASP"><a href="#VASP" class="headerlink" title="VASP"></a>VASP</h1><p><a target="_blank" rel="noopener" href="https://www.vasp.at/wiki/index.php/The_VASP_Manual">https://www.vasp.at/wiki/index.php/The_VASP_Manual</a></p>
+<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><h3 id="什么是赝势"><a href="#什么是赝势" class="headerlink" title="什么是赝势"></a>什么是赝势</h3><p>在赝势近似中，将<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8E%9F%E5%AD%90">原子</a>的核电子（即**非<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%83%B9%E9%9B%BB%E5%AD%90">价电子</a>**）以及<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8E%9F%E5%AD%90%E6%A0%B8">原子核</a>共同产生的一个复杂的势置换成一个“有效势”（赝势）</p>
+<h3 id="输入文件"><a href="#输入文件" class="headerlink" title="输入文件"></a>输入文件</h3><p>输入文件通常需要四个文件</p>
+<p>INCAR：计算的设置文件，决定进行何种性质的计算。</p>
+<p>POSCAR：描述晶胞参数，是什么体系，包括原子和坐标&#x2F;键长</p>
+<p>POTCAR：包含体系中各元素的赝势</p>
+<p>KPOINTS：K点设置，？</p>
+<h3 id="输出文件"><a href="#输出文件" class="headerlink" title="输出文件"></a>输出文件</h3><p>OUTCAR</p>
+<p>CHG &amp; CHGCAR</p>
+<h2 id="结构优化"><a href="#结构优化" class="headerlink" title="结构优化"></a>结构优化</h2><p>Univerisal </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">SYSTEM = fcc Si #计算的名称，无意义，注释作用</span><br><span class="line">NPAR = 4  #并行处理数量，数量需是运行时线程数的因子。</span><br><span class="line">NCORE = 5  #每个计算轨道上所使用的计算机线程数		</span><br><span class="line">&quot;（NPAR和NCORE选择一个设置即可，通常只设置NPAR=4，程序自动计算NCORE）“</span><br><span class="line">LWAVE = [logical] #.FALSE.或者.TRUE. FALSE不输出波函数文件WAVECAR</span><br><span class="line">LCHARG = .FALSE.  	#是否输出CHGCAR</span><br><span class="line">ISTART = 0 #不读取WAVECAR波函数文件</span><br><span class="line">				 1	#读取波函数文件(如果有)</span><br><span class="line">				 2	#？</span><br><span class="line">				 3	#？</span><br><span class="line">ICHARG = 2	#不读取CHGCAR文件</span><br><span class="line">				 1	#读取并允许修改</span><br><span class="line">				 11 #11读取并不修改</span><br><span class="line"></span><br><span class="line">ENCUT = 520 #平面波切断动能，设置为POTCAR中ENMAX最大值的1～1.3倍</span><br><span class="line">ISMEAR = 0  #采用Gaussian smearing </span><br><span class="line">SIGMA = 0.1	 #展宽0.1eV</span><br><span class="line">NSW = 3000 # 离子步上限</span><br><span class="line">IBRION = 0 #决定离子更新或移动的方式见下</span><br><span class="line">PREC = Accurate  #计算精度(可以用首字母N代替)</span><br><span class="line">ISIF = 2 #是否计算应力张量以及变化的离子自由度</span><br></pre></td></tr></table></figure>
+
+
+
+<p>IBRION &#x3D; -1 | 0 | 1 | 2 | 3 | 5 | 6 | 7 | 8 | 40 | 44 </p>
+<p>0 ： 进行分子动力学运算，</p>
+<p>-1 ： 分子不移动，等效NSW&#x3D;0，通常仅设置NSW&#x3D;0</p>
+<p>1 ： 离子弛豫，方式为RMM-DIIS</p>
+<p>2 ：离子弛豫，方式为共轭梯度算法。&#x3D;&#x3D;通用&#x3D;&#x3D;</p>
+<p>3 ： 离子弛豫，方式为阻尼分子动力学。适用跑过渡态且结构不准确时</p>
+<p>5 ：真空零点能，吸附矫正</p>
+<p>6 ：</p>
+<p>ISIF &#x3D; 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8  </p>
+<p>![截屏2024-08-21 15.46.41](.&#x2F;assets&#x2F;截屏2024-08-21 15.46.41.png)</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2024/08/24/%E7%94%B5%E5%AD%90%E5%AD%A6/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2024/08/24/hello-world/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
