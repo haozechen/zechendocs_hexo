@@ -25,10 +25,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="高斯GaussianGaussian（高斯）入门笔记 可应对一般的量化计算  【计算教程】Gaussian输入输出文件解读  基组的选择 单点能的计算 原子种类数目不同的分子不能比较单点能 VASPhttps:&#x2F;&#x2F;www.vasp.at&#x2F;wiki&#x2F;index.php&#x2F;The_VASP_Manual  vaspwiki-1 https:&#x2F;&#x2F;www.bigbrosci.com&#x2F;2017&#x2F;10&#x2F;14&#x2F;e">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/assets/2024-08-2518.32.30.png">
+<meta property="og:image" content="http://example.com/assets/2024-08-2115.46.41.png">
 <meta property="article:published_time" content="2024-08-24T05:29:33.000Z">
-<meta property="article:modified_time" content="2024-08-26T03:12:32.668Z">
+<meta property="article:modified_time" content="2024-08-26T14:54:16.335Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2024-08-2518.32.30.png">
     
     
     <!--- Icon Part-->
@@ -82,7 +85,7 @@
 
     <script id="hexo-configurations">
     window.config = {"hostname":"example.com","root":"/","language":"en"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":false,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"temp","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":"zechennku@gmail.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.4","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":false,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"temp","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":"zechennku@gmail.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.4","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -394,7 +397,7 @@
         
             <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
                 <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-                    <img src="/images/redefine-avatar.svg">
+                    <img src="/images/logo-zechen.png">
                 </div>
                 <div class="info flex flex-col justify-between">
                     <div class="author flex items-center">
@@ -414,8 +417,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-08-26 11:12:32</span>
-            <span class="mobile">2024-08-26 11:12:32</span>
+            <span class="desktop">2024-08-26 22:54:16</span>
+            <span class="mobile">2024-08-26 22:54:16</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -465,8 +468,9 @@
 <h2 id="输出文件"><a href="#输出文件" class="headerlink" title="输出文件"></a>输出文件</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.bigbrosci.com/2017/10/27/ex06/" >https://www.bigbrosci.com/2017/10/27/ex06/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 输出文件-6</p>
 <p><a class="link"   target="_blank" rel="noopener" href="https://www.bigbrosci.com/2017/10/29/ex07/" >https://www.bigbrosci.com/2017/10/29/ex07/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 输出文件-7</p>
 <h3 id="CONTCAR"><a href="#CONTCAR" class="headerlink" title="CONTCAR"></a>CONTCAR</h3><p>用来存储新结构的文件，可以利用CONTCAR续算</p>
-<h3 id="OSZICAR"><a href="#OSZICAR" class="headerlink" title="OSZICAR"></a>OSZICAR</h3><p>记录优化过程，包括电子步和离子步</p>
-<p>![截屏2024-08-25 18.32.30](..&#x2F;assets&#x2F;2024-08-25 18.32.30.png)</p>
+<h3 id="OSZICAR"><a href="#OSZICAR" class="headerlink" title="OSZICAR"></a>OSZICAR</h3><p><a class="link"   target="_blank" rel="noopener" href="https://www.vasp.at/wiki/index.php/OSZICAR" >https://www.vasp.at/wiki/index.php/OSZICAR <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>记录优化过程，包括电子步和离子步</p>
+<p><img src="/../assets/2024-08-2518.32.30.png" alt="1"></p>
 <table>
 <thead>
 <tr>
@@ -532,7 +536,7 @@
 </tr>
 <tr>
 <td>F</td>
-<td>体系的总能量</td>
+<td>体系的总能量 total free energy</td>
 <td></td>
 </tr>
 <tr>
@@ -550,7 +554,8 @@
 <p>包含</p>
 <p>1.<code>POTCAR</code>，<code>POSCAR</code>，<code>KPOINTS</code>，以及<code>INCAR</code>的信息。</p>
 <p>2.正式计算部分</p>
-<h3 id="CHG-CHGCAR"><a href="#CHG-CHGCAR" class="headerlink" title="CHG &amp; CHGCAR"></a>CHG &amp; CHGCAR</h3><h2 id="结构优化"><a href="#结构优化" class="headerlink" title="结构优化"></a>结构优化</h2><p>Univerisal </p>
+<h3 id="CHG-CHGCAR"><a href="#CHG-CHGCAR" class="headerlink" title="CHG &amp; CHGCAR"></a>CHG &amp; CHGCAR</h3><h2 id="结构优化"><a href="#结构优化" class="headerlink" title="结构优化"></a>结构优化</h2><p><a class="link"   target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000039855897" >https://segmentfault.com/a/1190000039855897 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>Univerisal </p>
 <div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">SYSTEM = fcc Si #计算的名称，无意义，注释作用</span><br><span class="line">NPAR = 4  #并行处理数量，数量需是运行时线程数的因子。</span><br><span class="line">NCORE = 5  #每个计算轨道上所使用的计算机线程数		</span><br><span class="line">&quot;（NPAR和NCORE选择一个设置即可，通常只设置NPAR=4，程序自动计算NCORE）“</span><br><span class="line">LWAVE = [logical] #.FALSE.或者.TRUE. FALSE指不输出波函数文件WAVECAR</span><br><span class="line">LCHARG = .FALSE.  	#是否输出CHGCAR</span><br><span class="line">ISTART = 0 #不读取WAVECAR波函数文件</span><br><span class="line">				 1	#读取波函数文件(如果有)</span><br><span class="line">				 2	#？</span><br><span class="line">				 3	#？</span><br><span class="line">ICHARG = 2	#不读取CHGCAR文件</span><br><span class="line">				 1	#读取并允许修改</span><br><span class="line">				 11 #11读取并不修改</span><br><span class="line">---global setting---</span><br><span class="line">PREC = Accurate  #计算精度(可以用首字母N代替)</span><br><span class="line">---电子自洽迭代--- 单电能SCF</span><br><span class="line">NELM   =  60  		#电子步上限</span><br><span class="line">NELMIN  = 4 		#电子步下限</span><br><span class="line">EDIFF   =    1E-05 	#电子收敛标准 eV</span><br><span class="line">---原子弛豫相关参数---</span><br><span class="line">NSW = 3000 # 离子步上限/原子弛豫最大步数</span><br><span class="line">IBRION = 0 #弛豫方法。决定离子移动和弛豫的方式，见下 ====</span><br><span class="line">EDIFFG  =    0.001 	#离子收敛标准，几何优化的收敛依据，可正可负，负=delta</span><br><span class="line"></span><br><span class="line">---结构优化相关参数---</span><br><span class="line">ISIF = 2 #是否计算应力张量以及变化的离子自由度	/描述原子晶胞动不动 可以控制迟豫时晶胞的变化情况,例如原胞的形状和体积等,一般选2、3 ====见下</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ENCUT = 520 #平面波切断动能，设置为POTCAR中ENMAX最大值的1～1.3倍</span><br><span class="line">ISMEAR = 0  #采用Gaussian smearing ，如何设置轨道部分占据率，0&amp;合适的sigma值适用绝大多数计算</span><br><span class="line">SIGMA = 0.1	 #展宽0.1eV，搭配ismear=0，能量展宽eV，有时过小的展宽不能收敛</span><br><span class="line"></span><br><span class="line">ALGO = Normal 		#描述电子最小化的过程怎么算，对应不同的算法类型，N=DAV方法</span><br><span class="line">LREAL = Auto 		#实空间还是倒易空间</span><br><span class="line">GGA = PE 			#泛函PBE，普适，泛函需与赝势匹配，使用修正泛函时可能报错（如PS泛函用PBE赝势），忽视即可，PS能更准确地预估晶胞参数且得到更小带隙</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 
 
@@ -570,7 +575,7 @@
 <p>5 ：真空零点能，吸附矫正</p>
 <p>6 ：</p>
 <h3 id="ISIF"><a href="#ISIF" class="headerlink" title="ISIF"></a>ISIF</h3><p> &#x3D; 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8  </p>
-<p>![2024-08-21 15.46.41](..&#x2F;assets&#x2F;2024-08-21 15.46.41.png)</p>
+<p><img src="/../assets/2024-08-2115.46.41.png" alt="2024-08-21 15.46.41"></p>
 <h3 id="ISMEAR"><a href="#ISMEAR" class="headerlink" title="ISMEAR"></a>ISMEAR</h3><ul>
 <li>1）<strong>不同的值对应的是不同的展宽方法</strong>；</li>
 <li>2）<strong>对于分子，原子的计算用0</strong>。</li>
@@ -593,6 +598,11 @@
 <li>SIGMA的取值要保证OUTCAR 中的 entropy T*S 这一项，平均到每个原子上，要小于 1-2 meV。检查的时候可以用这个命令:<br>grep ‘entropy T’  OUTCAR<br>用这个命令，得出的能量除以体系中原子的数目（也就是平均到每个原子上），然后再和 0.001 eV 比较。如果小于，SIGMA取值OK，如果大于，再换个小点的数值进行测试。</li>
 </ul>
 <p>算原子或者分子时：ISMEAR &#x3D; 0， SIGMA &#x3D; 0.01</p>
+<h3 id="EDIFFG"><a href="#EDIFFG" class="headerlink" title="EDIFFG"></a>EDIFFG</h3><p>EDIFFG defines the break condition for the ionic relaxation loop.离子步</p>
+<p>When EDIFFG is positive, the relaxation is stopped when the <strong>change of the total energy</strong> is smaller than EDIFFG between two ionic steps.</p>
+<p>When EDIFFG is negative, the relaxation is stopped when the norms of all the forces are smaller than |EDIFFG|. This is usually a more convenient setting.</p>
+<p>If EDIFFG &#x3D; 0, the ionic relaxation is stopped after <a class="link"   target="_blank" rel="noopener" href="https://www.vasp.at/wiki/index.php/NSW" >NSW <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> steps. 不进行结构优化，电子步进行完之后结束。</p>
+<p><strong>Warning:</strong> EDIFFG does not apply to <a class="link"   target="_blank" rel="noopener" href="https://www.vasp.at/wiki/index.php/Category:Molecular_dynamics" >molecular-dynamics <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> simulations.不适用分子动力学？？</p>
 <h2 id="绘制DOS图"><a href="#绘制DOS图" class="headerlink" title="绘制DOS图"></a>绘制DOS图</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.bigbrosci.com/2018/02/06/ex37/" >https://www.bigbrosci.com/2018/02/06/ex37/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p><a class="link"   target="_blank" rel="noopener" href="https://www.bigbrosci.com/2018/02/07/ex38/" >https://www.bigbrosci.com/2018/02/07/ex38/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p><a class="link"   target="_blank" rel="noopener" href="https://www.bigbrosci.com/2018/02/08/ex39/" >https://www.bigbrosci.com/2018/02/08/ex39/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
@@ -616,11 +626,11 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-08-26 11:12:32
+                    :</strong> 2024-08-26 22:54:16
             </li>
         
         <li>
-            <strong>Link:</strong> https://zechennku.tech/2024/08/24/计算化学/
+            <strong>Link:</strong> https://zechennku.com/2024/08/24/计算化学/
         </li>
         <li>
             <strong>
@@ -732,7 +742,7 @@
     <div class="post-toc">
         <div class="toc-title">On this page</div>
         <div class="page-title">计算化学</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%AB%98%E6%96%AFGaussian"><span class="nav-text">高斯Gaussian</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VASP"><span class="nav-text">VASP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Background"><span class="nav-text">Background</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%B5%9D%E5%8A%BF"><span class="nav-text">什么是赝势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E6%AD%A5%E5%92%8C%E7%A6%BB%E5%AD%90%E6%AD%A5"><span class="nav-text">电子步和离子步</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6"><span class="nav-text">输入文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#INCAR"><span class="nav-text">INCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POSCAR"><span class="nav-text">POSCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POTCAR"><span class="nav-text">POTCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#KPOINTS"><span class="nav-text">KPOINTS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6"><span class="nav-text">输出文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CONTCAR"><span class="nav-text">CONTCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OSZICAR"><span class="nav-text">OSZICAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OUTCAR"><span class="nav-text">OUTCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CHG-CHGCAR"><span class="nav-text">CHG &amp; CHGCAR</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E6%9E%84%E4%BC%98%E5%8C%96"><span class="nav-text">结构优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E8%A7%A3%E8%AF%BB"><span class="nav-text">参数解读</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IBRION"><span class="nav-text">IBRION</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ISIF"><span class="nav-text">ISIF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ISMEAR"><span class="nav-text">ISMEAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SIGMA"><span class="nav-text">SIGMA</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%98%E5%88%B6DOS%E5%9B%BE"><span class="nav-text">绘制DOS图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#copy-INCAR"><span class="nav-text">copy-INCAR</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%AB%98%E6%96%AFGaussian"><span class="nav-text">高斯Gaussian</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VASP"><span class="nav-text">VASP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Background"><span class="nav-text">Background</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%B5%9D%E5%8A%BF"><span class="nav-text">什么是赝势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E6%AD%A5%E5%92%8C%E7%A6%BB%E5%AD%90%E6%AD%A5"><span class="nav-text">电子步和离子步</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6"><span class="nav-text">输入文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#INCAR"><span class="nav-text">INCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POSCAR"><span class="nav-text">POSCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POTCAR"><span class="nav-text">POTCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#KPOINTS"><span class="nav-text">KPOINTS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6"><span class="nav-text">输出文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CONTCAR"><span class="nav-text">CONTCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OSZICAR"><span class="nav-text">OSZICAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OUTCAR"><span class="nav-text">OUTCAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CHG-CHGCAR"><span class="nav-text">CHG &amp; CHGCAR</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E6%9E%84%E4%BC%98%E5%8C%96"><span class="nav-text">结构优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E8%A7%A3%E8%AF%BB"><span class="nav-text">参数解读</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IBRION"><span class="nav-text">IBRION</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ISIF"><span class="nav-text">ISIF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ISMEAR"><span class="nav-text">ISMEAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SIGMA"><span class="nav-text">SIGMA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EDIFFG"><span class="nav-text">EDIFFG</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%98%E5%88%B6DOS%E5%9B%BE"><span class="nav-text">绘制DOS图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#copy-INCAR"><span class="nav-text">copy-INCAR</span></a></li></ol></li></ol>
 
     </div>
 </div>
@@ -936,10 +946,6 @@
 <script src="/js/tools/codeBlock.js" type="module"></script>
 
 
-
-
-    
-<script src="/js/layouts/lazyload.js" type="module"></script>
 
 
 
