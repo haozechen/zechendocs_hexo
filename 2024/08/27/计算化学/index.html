@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/08/24/计算化学/"/>
+    <link rel="canonical" href="http://example.com/2024/08/27/计算化学/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -21,14 +21,14 @@
         <meta name="description" content="高斯GaussianGaussian（高斯）入门笔记 可应对一般的量化计算  【计算教程】Gaussian输入输出文件解读  基组的选择 单点能的计算 原子种类数目不同的分子不能比较单点能 VASPhttps:&#x2F;&#x2F;www.vasp.at&#x2F;wiki&#x2F;index.php&#x2F;The_VASP_Manual  vaspwiki-1 https:&#x2F;&#x2F;www.bigbrosci.com&#x2F;2017&#x2F;10&#x2F;14&#x2F;e">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算化学">
-<meta property="og:url" content="http://example.com/2024/08/24/%E8%AE%A1%E7%AE%97%E5%8C%96%E5%AD%A6/index.html">
+<meta property="og:url" content="http://example.com/2024/08/27/%E8%AE%A1%E7%AE%97%E5%8C%96%E5%AD%A6/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="高斯GaussianGaussian（高斯）入门笔记 可应对一般的量化计算  【计算教程】Gaussian输入输出文件解读  基组的选择 单点能的计算 原子种类数目不同的分子不能比较单点能 VASPhttps:&#x2F;&#x2F;www.vasp.at&#x2F;wiki&#x2F;index.php&#x2F;The_VASP_Manual  vaspwiki-1 https:&#x2F;&#x2F;www.bigbrosci.com&#x2F;2017&#x2F;10&#x2F;14&#x2F;e">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/assets/2024-08-2518.32.30.png">
 <meta property="og:image" content="http://example.com/assets/2024-08-2115.46.41.png">
-<meta property="article:published_time" content="2024-08-24T05:29:33.000Z">
-<meta property="article:modified_time" content="2024-08-26T14:54:16.335Z">
+<meta property="article:published_time" content="2024-08-27T05:29:33.000Z">
+<meta property="article:modified_time" content="2024-08-27T06:00:50.725Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/assets/2024-08-2518.32.30.png">
@@ -410,15 +410,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-08-24 13:29:33</span>
-        <span class="mobile">2024-08-24 13:29:33</span>
+        <span class="desktop">2024-08-27 13:29:33</span>
+        <span class="mobile">2024-08-27 13:29:33</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-08-26 22:54:16</span>
-            <span class="mobile">2024-08-26 22:54:16</span>
+            <span class="desktop">2024-08-27 14:50</span>
+            <span class="mobile">2024-08-27 14:50</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -463,8 +463,20 @@
 <p>输入文件通常需要四个文件</p>
 <h3 id="INCAR"><a href="#INCAR" class="headerlink" title="INCAR"></a>INCAR</h3><p>计算的设置文件，决定进行何种性质的计算。&#x3D;&#x3D;不要用tab，只能用space&#x3D;&#x3D;</p>
 <h3 id="POSCAR"><a href="#POSCAR" class="headerlink" title="POSCAR"></a>POSCAR</h3><p>描述晶胞参数，是什么体系，包括原子和坐标&#x2F;键长</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">O atom in a box  #Name 可以随便定义</span><br><span class="line">1.0             # universal scaling parameters </span><br><span class="line">8.0 0.0 0.0     # lattice vector a(1) </span><br><span class="line">0.0 8.0 0.0     # lattice vector a(2)  </span><br><span class="line">0.0 0.0 8.0     # lattice vector a(3)  </span><br><span class="line">O C H             # O element， not zero</span><br><span class="line">1 2 6             # number of atoms </span><br><span class="line">Cartesian       # positions in cartesian coordinates笛卡尔坐标系</span><br><span class="line">0.0 0.0 0.0           #</span><br></pre></td></tr></table></figure></div>
+
+
+
 <h3 id="POTCAR"><a href="#POTCAR" class="headerlink" title="POTCAR"></a>POTCAR</h3><p>包含体系中各元素的赝势，对应的是计算过程中每个原子的平面波基组，描述体系中对应的原子核和电子的相关信息。</p>
 <h3 id="KPOINTS"><a href="#KPOINTS" class="headerlink" title="KPOINTS"></a>KPOINTS</h3><p>K点设置，？</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">结构优化？</span><br><span class="line">#############################</span><br><span class="line">K-POINTS      #  第一行随便写都行，但不能没有</span><br><span class="line"> 0             # 零，格子自动生成</span><br><span class="line">Gamma         #  gamma点centered =gamma=Gorge=gorge=G=g</span><br><span class="line">1 1 1         #  1*1*1格子</span><br><span class="line">0 0 0         #  S1 S2 S3， 一般保持 0 0 0 不变。</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+
+
+
+
+
+
 <h2 id="输出文件"><a href="#输出文件" class="headerlink" title="输出文件"></a>输出文件</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.bigbrosci.com/2017/10/27/ex06/" >https://www.bigbrosci.com/2017/10/27/ex06/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 输出文件-6</p>
 <p><a class="link"   target="_blank" rel="noopener" href="https://www.bigbrosci.com/2017/10/29/ex07/" >https://www.bigbrosci.com/2017/10/29/ex07/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 输出文件-7</p>
 <h3 id="CONTCAR"><a href="#CONTCAR" class="headerlink" title="CONTCAR"></a>CONTCAR</h3><p>用来存储新结构的文件，可以利用CONTCAR续算</p>
@@ -546,7 +558,7 @@
 </tr>
 <tr>
 <td>d E</td>
-<td></td>
+<td>F的差，delta F ?</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -567,6 +579,7 @@
 
 
 <h2 id="参数解读"><a href="#参数解读" class="headerlink" title="参数解读"></a>参数解读</h2><h3 id="IBRION"><a href="#IBRION" class="headerlink" title="IBRION"></a>IBRION</h3><p> &#x3D; -1 | 0 | 1 | 2 | 3 | 5 | 6 | 7 | 8 | 40 | 44 </p>
+<p>原子怎么动，5真空零点能（吸附矫正），0分子动力学，-1不动等效于NSW&#x3D;0，2通用，3跑过渡态且结构不咋准确时用</p>
 <p>0 ： 进行分子动力学运算，</p>
 <p>-1 ： 分子不移动，等效NSW&#x3D;0，通常仅设置NSW&#x3D;0</p>
 <p>1 ： 离子弛豫，方式为RMM-DIIS</p>
@@ -622,15 +635,15 @@
         <li><strong>Title:</strong> 计算化学</li>
         <li><strong>Author:</strong> Hao Zechen</li>
         <li><strong>Created at
-                :</strong> 2024-08-24 13:29:33</li>
+                :</strong> 2024-08-27 13:29:33</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-08-26 22:54:16
+                    :</strong> 2024-08-27 14:00:50
             </li>
         
         <li>
-            <strong>Link:</strong> https://zechennku.com/2024/08/24/计算化学/
+            <strong>Link:</strong> https://zechennku.com/2024/08/27/计算化学/
         </li>
         <li>
             <strong>
@@ -655,29 +668,14 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2024/08/24/%E7%94%B5%E5%AD%90%E5%AD%A6/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">电子学</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/2024/08/24/hello-world/"
+                        href="/2024/08/24/MATLAB/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">MATLAB</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
