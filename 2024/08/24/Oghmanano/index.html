@@ -31,8 +31,9 @@
 <meta property="og:image" content="http://example.com/assets/image-20240824101927211.png">
 <meta property="og:image" content="http://example.com/assets/image-20240824101938521.png">
 <meta property="article:published_time" content="2024-08-24T05:29:33.000Z">
-<meta property="article:modified_time" content="2024-08-27T06:14:23.160Z">
+<meta property="article:modified_time" content="2024-08-30T01:58:54.000Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="study">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/assets/image-20240823165553050.png">
     
@@ -358,7 +359,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -366,7 +367,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -406,7 +407,7 @@
                     <div class="author flex items-center">
                         <span class="name text-default-text-color text-lg font-semibold">Hao Zechen</span>
                         
-                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv2</span>
                         
                     </div>
                     <div class="meta-info">
@@ -420,13 +421,24 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-08-27 14:14:23</span>
-            <span class="mobile">2024-08-27 14:14:23</span>
+            <span class="desktop">2024-08-30 09:58:54</span>
+            <span class="mobile">2024-08-30 09:58:54</span>
             <span class="hover-info">Updated</span>
         </span>
     
 
     
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/study/">study</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -452,6 +464,7 @@
 <p>1.扫Gate电压，Drain-Source电压同时变。</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Ramping: Gate 0.01 1.00 dV=0.010000 ittr=99 f()=9.245654e+00 (160.528076 ms)</span><br><span class="line">Ramping: Drain 0.01 15.00 dV=0.010000 ittr=99 (160.528076 ms)</span><br><span class="line">Ramping: Gate 0.02 1.00 dV=0.010000 ittr=99 f()=7.963709e+00 (171.938965 ms)</span><br><span class="line">Ramping: Drain 0.02 15.00 dV=0.010000 ittr=99 (171.938965 ms)</span><br><span class="line">Ramping: Gate 0.03 1.00 dV=0.010000 ittr=99 f()=7.611898e+00 (161.938232 ms)</span><br><span class="line">Ramping: Drain 0.03 15.00 dV=0.010000 ittr=99 (161.938232 ms)</span><br><span class="line">Ramping: Gate 0.04 1.00 dV=0.010000 ittr=99 f()=1.496854e+00 (155.616211 ms)</span><br><span class="line">Ramping: Drain 0.04 15.00 dV=0.010000 ittr=99 (155.616211 ms)</span><br><span class="line">Ramping: Gate 0.05 1.00 dV=0.010000 ittr=99 f()=4.718174e+01 (159.937012 ms)</span><br><span class="line">Ramping: Drain 0.05 15.00 dV=0.010000 ittr=99 (159.937012 ms)</span><br><span class="line">Ramping: Gate 0.06 1.00 dV=0.010000 ittr=99 f()=7.587214e-01 (151.253906 ms)</span><br><span class="line">Ramping: Drain 0.06 15.00 dV=0.010000 ittr=99 (151.253906 ms)</span><br><span class="line">Ramping: Gate 0.07 1.00 dV=0.010000 ittr=99 f()=1.060203e+01 (151.180908 ms)</span><br><span class="line">Ramping: Drain 0.07 15.00 dV=0.010000 ittr=99 (151.180908 ms)</span><br><span class="line">Ramping: Gate 0.08 1.00 dV=0.010000 ittr=99 f()=7.601531e+00 (156.173096 ms)</span><br><span class="line">Ramping: Drain 0.08 15.00 dV=0.010000 ittr=99 (156.173096 ms)</span><br></pre></td></tr></table></figure></div>
 
+<p>11</p>
 <p>2</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Ramping: Drain 0.99 15.00 dV=0.010000 ittr=99 (165.983887 ms)</span><br><span class="line">Ramping: Gate 1.00 1.00 dV=0.010000 ittr=99 f()=2.841054e+01 (162.081055 ms)</span><br><span class="line">Ramping: Drain 1.00 15.00 dV=0.010000 ittr=99 (162.081055 ms)</span><br><span class="line">Ramping: Drain 1.01 15.00 dV=0.010000 ittr=99 f()=1.946107e+01 (155.785889 ms)</span><br><span class="line">Ramping: Drain 1.02 15.00 dV=0.010000 ittr=99 f()=3.878461e+00 (154.854980 ms)</span><br><span class="line">Ramping: Drain 1.03 15.00 dV=0.010000 ittr=99 f()=8.070509e-01 (157.500977 ms)</span><br><span class="line">Ramping: Drain 1.04 15.00 dV=0.010000 ittr=99 f()=3.522482e-02 (156.621094 ms)</span><br><span class="line">Ramping: Drain 1.05 15.00 dV=0.010000 ittr=99 f()=2.179965e+00 (156.429932 ms)</span><br><span class="line">Ramping: Drain 1.06 15.00 dV=0.010000 ittr=99 f()=1.832969e+02 (163.339111 ms)</span><br><span class="line">Ramping: Drain 1.07 15.00 dV=0.010000 ittr=99 f()=1.007492e+01 (152.480957 ms)</span><br><span class="line">Ramping: Drain 1.08 15.00 dV=0.010000 ittr=99 f()=2.755198e+00 (163.074951 ms)</span><br><span class="line">Ramping: Drain 1.09 15.00 dV=0.010000 ittr=99 f()=2.422639e+00 (148.750977 ms)</span><br><span class="line">Ramping: Drain 1.10 15.00 dV=0.010000 ittr=99 f()=1.304447e+02 (150.608154 ms)</span><br><span class="line">Ramping: Drain 1.11 15.00 dV=0.010000 ittr=99 f()=1.495138e+02 (155.066895 ms)</span><br><span class="line">Ramping: Drain 1.12 15.00 dV=0.010000 ittr=99 f()=1.247584e+00 (157.258057 ms)</span><br></pre></td></tr></table></figure></div>
 
@@ -801,7 +814,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-08-27 14:14:23
+                    :</strong> 2024-08-30 09:58:54
             </li>
         
         <li>
@@ -823,6 +836,14 @@
             </div>
         
 
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/study/">#study</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         
@@ -950,7 +971,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        7 posts in total
+                        9 posts in total
                     </span>
                     
                 </p>
