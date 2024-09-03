@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://example.com/assets/image-20240824101927211.png">
 <meta property="og:image" content="http://example.com/assets/image-20240824101938521.png">
 <meta property="article:published_time" content="2024-08-24T05:29:33.000Z">
-<meta property="article:modified_time" content="2024-08-30T01:58:54.000Z">
+<meta property="article:modified_time" content="2024-09-01T16:13:36.507Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="study">
 <meta name="twitter:card" content="summary">
@@ -421,8 +421,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-08-30 09:58:54</span>
-            <span class="mobile">2024-08-30 09:58:54</span>
+            <span class="desktop">2024-09-02 00:13:36</span>
+            <span class="mobile">2024-09-02 00:13:36</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -633,58 +633,15 @@
 </tr>
 </tbody></table>
 <p>&#x3D;&#x3D;snapshot&#x3D;&#x3D;</p>
+<p>Current density</p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th align="left">Description</th>
+<th>Jn</th>
+<th align="left">current density</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Ec.csv</td>
-<td align="left">LUMO - position</td>
-</tr>
-<tr>
-<td>E<del>field</del></td>
-<td align="left">material number?</td>
-</tr>
-<tr>
-<td>Eg.csv</td>
-<td align="left">Band gap - position</td>
-</tr>
-<tr>
-<td>Ev.csv</td>
-<td align="left">HOMO - position</td>
-</tr>
-<tr>
-<td>Fi.csv</td>
-<td align="left">Equlibrium Fermi-level</td>
-</tr>
-<tr>
-<td>Fn.csv</td>
-<td align="left">Electron quasi Fermi-level</td>
-</tr>
-<tr>
-<td>Fp.csv</td>
-<td align="left">Hole quasi Fermi-level</td>
-</tr>
-<tr>
-<td>G_n</td>
-<td align="left">Free electron generation rate</td>
-</tr>
-<tr>
-<td>G_p</td>
-<td align="left">Free hole generation rate</td>
-</tr>
-<tr>
-<td>H_joule_device</td>
-<td align="left">Joule heating from device</td>
-</tr>
-<tr>
-<td>Jn</td>
-<td align="left">current density</td>
-</tr>
-<tr>
 <td>Jn_all</td>
 <td align="left">Jn<del>y</del>+Jn<del>x</del></td>
 </tr>
@@ -748,19 +705,33 @@
 <td>Jp_x_drift</td>
 <td align="left">Drift current density</td>
 </tr>
+</tbody></table>
+<p>Fermi-level</p>
+<table>
+<thead>
 <tr>
-<td>Nad</td>
-<td align="left">Doping</td>
+<th>Fi.csv</th>
+<th align="left">Equlibrium Fermi-level</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fn.csv</td>
+<td align="left">Electron quasi Fermi-level</td>
 </tr>
 <tr>
-<td>Nion</td>
-<td align="left">Perovskite mobile ion density</td>
+<td>Fp.csv</td>
+<td align="left">Hole quasi Fermi-level</td>
 </tr>
+</tbody></table>
+<p>carrier density</p>
+<table>
+<thead>
 <tr>
-<td>Q_nfree</td>
-<td align="left">free electron carrier density</td>
+<th>Q_nfree</th>
+<th align="left">free electron carrier density</th>
 </tr>
-<tr>
+</thead>
+<tbody><tr>
 <td>Q_nfree+ntrap</td>
 <td align="left">total electron density</td>
 </tr>
@@ -789,6 +760,51 @@
 <td align="left">free electron -&gt; free hole recombination rate</td>
 </tr>
 </tbody></table>
+<p>Others</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ec.csv</td>
+<td align="left">LUMO - position</td>
+</tr>
+<tr>
+<td>E<del>field</del></td>
+<td align="left">material number?</td>
+</tr>
+<tr>
+<td>Eg.csv</td>
+<td align="left">Band gap - position</td>
+</tr>
+<tr>
+<td>Ev.csv</td>
+<td align="left">HOMO - position</td>
+</tr>
+<tr>
+<td>G_n</td>
+<td align="left">Free electron generation rate</td>
+</tr>
+<tr>
+<td>G_p</td>
+<td align="left">Free hole generation rate</td>
+</tr>
+<tr>
+<td>H_joule_device</td>
+<td align="left">Joule heating from device</td>
+</tr>
+<tr>
+<td>Nad</td>
+<td align="left">Doping</td>
+</tr>
+<tr>
+<td>Nion</td>
+<td align="left">Perovskite mobile ion density</td>
+</tr>
+</tbody></table>
 <p>R-(nfree&amp;nfree to ptrap&amp;pfree)_srh&#x3D;due to srh processes , the free electron loss; SRH recombination free electrons -&gt; trapped holes ; free holes loss</p>
 <p>T-(nfree to ntrap&amp;pfree to ptrap)_srh&#x3D;SRH relaxation free electrons&#x2F;holes</p>
 <p>Te Th Tl&#x3D; temperature of electron hole lattice </p>
@@ -814,7 +830,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-08-30 09:58:54
+                    :</strong> 2024-09-02 00:13:36
             </li>
         
         <li>
